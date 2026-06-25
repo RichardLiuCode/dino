@@ -107,3 +107,8 @@ document.getElementById("gameDisplay").addEventListener("click", function (e) {
             }
         }, 100)];
 });
+document.getElementById("gameDisplay").addEventListener("contextmenu", function (e) {
+    if (isGameStarted) {
+        e.preventDefault();
+    }
+});
