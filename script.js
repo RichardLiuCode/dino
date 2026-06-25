@@ -99,7 +99,7 @@ document.getElementById("gameDisplay").addEventListener("click", function (e) {
         }, 15000),
         setInterval(function () {
             if (isGameStarted) {
-                if (new URL(dinoImg.src).pathname.replace(/\//g, "") == "dino.png" || new URL(dinoImg.src).pathname == "/dino/ding.png") {
+                if (new URL(dinoImg.src).pathname.replace(/\//g, "").includes("dino.png")) {
                     dinoImg.src = "./dino2.png";
                 } else {
                     dinoImg.src = "./dino.png";
